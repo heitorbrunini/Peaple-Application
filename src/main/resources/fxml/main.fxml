@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="497.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.form.peaple.controller.MainController">
+   <SplitPane dividerPositions="0.28190743338008417" prefHeight="497.0" prefWidth="881.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="495.0" prefWidth="307.0">
+            <children>
+               <Button layoutX="82.0" layoutY="307.0" mnemonicParsing="false" onAction="#onBtSubscripe" text="Cadastrar" />
+               <RadioButton fx:id="maleField" layoutX="25.0" layoutY="134.0" mnemonicParsing="false" text="Homem" />
+               <RadioButton fx:id="femaleField" layoutX="104.0" layoutY="134.0" mnemonicParsing="false" text="Mulher" />
+               <TextField fx:id="nameField" layoutX="25.0" layoutY="40.0" prefHeight="25.0" prefWidth="181.0" promptText="Primeiro Nome" />
+               <TextField fx:id="lastnameField" layoutX="25.0" layoutY="73.0" prefHeight="25.0" prefWidth="181.0" promptText="Último Nome" />
+               <Label layoutX="25.0" layoutY="108.0" text="Sexo:" />
+               <TextField fx:id="birthField" layoutX="25.0" layoutY="163.0" prefHeight="25.0" prefWidth="181.0" promptText="29/07/2002" />
+               <TextField fx:id="cpfField" layoutX="25.0" layoutY="199.0" prefHeight="25.0" prefWidth="181.0" promptText="CPF" />
+               <TextField fx:id="titleField" layoutX="25.0" layoutY="235.0" prefHeight="25.0" prefWidth="181.0" promptText="Título de eleitor" />
+            </children>
+         </AnchorPane>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="815.0">
+            <children>
+               <TableView layoutX="24.0" layoutY="38.0" prefHeight="420.0" prefWidth="584.0">
+                 <columns>
+                   <TableColumn prefWidth="145.0" text="Nome" />
+                   <TableColumn prefWidth="61.0" text="Sexo" />
+                     <TableColumn prefWidth="140.0" text="CPF" />
+                     <TableColumn prefWidth="150.0" text="Titulo" />
+                     <TableColumn prefWidth="87.0" text="Situação" />
+                 </columns>
+               </TableView>
+            </children>
+         </AnchorPane>
+     </items>
+   </SplitPane>
+</AnchorPane>
